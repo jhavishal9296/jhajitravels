@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Car Rental – Easy, Fast & Trusted</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <nav class="nav container">
+    <a href="#" class="logo">RENTAL CAR<small>Easy, fast &amp; trusted</small></a>
+    <ul class="menu" id="menu">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#fleet">Fleet</a></li>
+      <li><a href="#fleet">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#fleet" class="btn">Book now</a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </nav>
+
+  <div class="container hero-text">
+    <h1>Car rental that is <span>easy, fast</span> and trusted</h1>
+    <p>Choose from a wide range of well-kept cars for every trip.</p>
+  </div>
+
+  <form class="search container" id="searchForm">
+    <label>Pickup location
+      <select id="location">
+        <option value="">Select location</option>
+        <option>Delhi</option><option>Ghaziabad</option><option>Noida</option>
+      </select>
+    </label>
+    <label>Pickup date <input type="date" id="pickup"></label>
+    <label>Return date <input type="date" id="return"></label>
+    <button class="btn" type="submit">Search cars</button>
+  </form>
+</header>
+
+<main class="container">
+
+  <!-- PROMO -->
+  <section class="promo">
+    <div class="badge">Up to<b>30%</b>off</div>
+    <div class="promo-text">
+      <h2>Today's special offer!</h2>
+      <p>Rent a car now and get a limited-time discount.</p>
+    </div>
+    <div class="timer">
+      <div><b id="h">00</b>hours</div>
+      <div><b id="m">00</b>mins</div>
+      <div><b id="s">00</b>secs</div>
+    </div>
+    <a href="#fleet" class="btn">Get offer</a>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div><b>10+ years</b>Experience</div>
+    <div><b>5000+</b>Happy customers</div>
+    <div><b>50+</b>Maintained cars</div>
+    <div><b>24 hours</b>Support</div>
+  </section>
+
+  <!-- FLEET (filled by script.js) -->
+  <section id="fleet">
+    <h2 class="title">Choose from our best fleet</h2>
+    <div class="cards" id="cards"></div>
+    <button class="btn ghost" id="moreBtn">View all cars</button>
+  </section>
+
+  <!-- STEPS -->
+  <section class="steps-box">
+    <h2 class="title">How to book</h2>
+    <ol class="steps">
+      <li><span>🔍</span><b>Pick a car</b>Choose what fits your trip</li>
+      <li><span>📅</span><b>Pick dates</b>Set pickup and return</li>
+      <li><span>📝</span><b>Fill details</b>Your info and booking</li>
+      <li><span>✅</span><b>Confirm</b>Confirm on WhatsApp</li>
+      <li><span>🔑</span><b>Ready to go</b>Your car is waiting</li>
+    </ol>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="about">
+    <h2 class="title">What our customers say</h2>
+    <div class="reviews">
+      <article><div class="stars">★★★★★</div><p>"Great service, the car was clean and smelled fresh. Will rent again!"</p><b>Rudi H.</b></article>
+      <article><div class="stars">★★★★★</div><p>"Fair price, quick process and a very friendly driver."</p><b>Dewi L.</b></article>
+      <article><div class="stars">★★★★★</div><p>"Cars are in great condition. Recommended!"</p><b>Andi P.</b></article>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div><h2>Need a car right now?</h2><p>Contact us on WhatsApp – we reply within minutes, 24 hours a day.</p></div>
+    <a class="btn dark" href="https://wa.me/910000000000" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="container foot">
+    <div><div class="logo">RENTAL CAR</div><p>A better way to travel, with comfortable cars at honest prices.</p></div>
+    <div><h4>Menu</h4><a href="#">Home</a><a href="#fleet">Fleet</a><a href="#about">About</a></div>
+    <div><h4>Contact</h4><p>📞 +91 00000 00000</p><p>✉ info@example.com</p><p>📍 Your address, City</p></div>
+  </div>
+  <p class="copy">© 2026 Rental Car. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
